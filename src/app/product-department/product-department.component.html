@@ -1,0 +1,8 @@
+<div class="product-department">
+    <span *ngFor="let name of product.department; let i=index">
+      <a href="#">{{ name }}</a>
+      <!-- {{i < (product.department.length-1) ? '>' : ''}}意味着,
+           只要不是最后一级分类，就显示一个'>'号; 否则显示一个空字符串'' -->
+      <span>{{i < (product.department.length-1) ? '>' : ''}}</span>
+    </span>
+</div>

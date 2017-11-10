@@ -8,5 +8,6 @@ if (environment.production) {
   enableProdMode();
 }
 
+// 启动应用
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
